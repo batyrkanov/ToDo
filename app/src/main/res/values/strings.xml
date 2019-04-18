@@ -1,9 +1,3 @@
 <resources>
-    <string name="app_name">ToDo</string>
-    <string name="filter_title">Filter the Todos</string>
-    <string-array name="filter_options">
-        <item>All</item>
-        <item>Active</item>
-        <item>Completed</item>
-    </string-array>
+    <string name="app_name">Calculator</string>
 </resources>
