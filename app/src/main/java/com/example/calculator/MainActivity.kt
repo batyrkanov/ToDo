@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
             val expression = ExpressionBuilder(txt).build()
             try {
                 val result = expression.evaluate()
-                txtInput.text = result.toString()
+                txtInput.text = if (result.toInt().toDouble() != result) result.toString() else result.toInt().toString()
                 lastDot = true
             }
             catch (ex: ArithmeticException){
