@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import com.example.todo.model.Todo
 import kotlinx.android.synthetic.main.todo_item.view.*
 
-class TodoAdapter(context: Context, val todos: List<Todo>) :
+class TodoAdapter(context: Context, private val todos: List<Todo>) :
         ArrayAdapter<Todo>(context, 0, todos){
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {

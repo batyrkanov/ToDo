@@ -7,7 +7,7 @@
 
     <group android:name="plus_group" android:pivotX="12" android:pivotY="12">
         <path android:name="plus_path"
-              android:strokeColor="@android:color/white"
+              android:strokeColor="@android:color/holo_blue_light"
               android:strokeWidth="3"
               android:pathData="M12, 0L12, 24M0, 12, L24, 12"></path>
     </group>

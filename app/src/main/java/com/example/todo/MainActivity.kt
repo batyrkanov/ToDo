@@ -32,9 +32,9 @@ class MainActivity : AppCompatActivity(), Renderer<TodoModel> {
         fab.setOnClickListener{ openDialog()}
 
         listView.adapter = TodoAdapter(this, listOf())
-        listView.setOnItemClickListener({_, _, _, id ->
+        listView.setOnItemClickListener { _, _, _, id ->
             store.dispatch(ToogleTodo(id))
-        })
+        }
 
         listView.setOnItemClickListener{_, _, _, id ->
             store.dispatch(RemoveTodo(id))
